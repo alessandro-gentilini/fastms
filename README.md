@@ -6,7 +6,7 @@ This code implements the approach for the following research paper:
 
 ![alt tag](https://vision.in.tum.de/_media/data/software/fastms.png)
 
-The algorithms computes piecewise smooth and piecewise constant approximations to input images. The result will be smooth over more or less large regions, but is allowed to have sharp color jumps (discontinuities) between regions of smoothness. Applications range from image denoising to producing cartooning image effects. The model describning how exactly the result should look like -- the Mumford-Shah model -- has a long history and is among the most cited in computer vision.
+The algorithms computes piecewise smooth and piecewise constant approximations to input images. The result will be smooth over more or less large regions, but is allowed to have sharp color jumps (discontinuities) between regions of smoothness. Applications range from image denoising to producing cartooning image effects. The model describing how exactly the result should look like -- the Mumford-Shah model -- has a long history and is among the most cited in computer vision.
 Current state-of-the-art approaches either use heuristics introducing additional artificial parameters, which leads to parameter-sensitive results, or require minutes of run time for a single VGA color image, see the above paper for more details.
 
 The approach implemented here produces state-of-the-art quality results and runs in real-time.
@@ -84,7 +84,7 @@ If you specify only one image, e.g.
 
         ./main -i images/hepburn.png
 
-you will get a GUI where one can change the main regularization parameters *lambda* and *alpha of the Mumford-Shah model, and see the results immediately.
+you will get a GUI where one can change the main regularization parameters *lambda* and *alpha* of the Mumford-Shah model, and see the results immediately.
 
 ### Hotkeys
 - <kbd>e</kbd>: Toggle edges highlighting on/off
